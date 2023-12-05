@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Padauk:wght@400;700&family=Rubik:wght@400;500;600&display=swap');
+@import url("./node_modules/sweetalert2/dist/sweetalert2.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    counter-reset: recordIndex;
+}
+
+.td-counter::before{
+    counter-increment: recordIndex;
+    content: counter(recordIndex);
+}
